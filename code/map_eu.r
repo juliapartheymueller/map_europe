@@ -7,7 +7,7 @@ library("sp")
 library("classInt")
 
 # Set directory
-dir <- "/Users/partheym/Desktop/Map_Europe/"
+dir <- "../"
 
 # Read shapes (Retrieved from: http://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts)
 europe.map<-readShapeSpatial(paste0(dir,"data/NUTS_2013_01M_SH/data/NUTS_RG_01M_2013"))
