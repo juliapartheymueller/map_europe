@@ -22,11 +22,11 @@ head(europe.map@data)
 europe.map2 <- europe.map[europe.map$STAT_LEVL_ == 0,]
 	
 # Plot European countries with random colors
-col = rainbow(length(levels(europe.map2$NUTS_ID)))
-spplot(europe.map2, "NUTS_ID", col.regions=col,
-	colorkey = FALSE, lwd=.4, col="white",
-	main="European Countries",
-	xlim = c(-13, 35), ylim = c(33, 72))
+# col = rainbow(length(levels(europe.map2$NUTS_ID)))
+# p0 <- spplot(europe.map2, "NUTS_ID", col.regions=col,
+# 	colorkey = FALSE, lwd=.4, col="white",
+# 	main="European Countries",
+# 	xlim = c(-13, 35), ylim = c(33, 72))
 
 # Match external data by NUTS ID
 europe.map2 <- SpatialPolygonsDataFrame(europe.map2,
@@ -47,9 +47,19 @@ brks.eq = classIntervals(agg.some_data$x, n = num.int, style = "equal")
 brks.pr = classIntervals(agg.some_data$x, n = num.int, style = "pretty")
 
 # Plot
-spplot(europe.map2, c("some_data"), names.attr =c("Some data"),
+p1 <- spplot(europe.map2, c("some_data"), names.attr =c("Some data"),
 	at= brks.pr$brks,
 	col=grey(.9), col.regions=pal,
 	main="ADD TITLE",
 	xlim = c(-13, 35), ylim = c(33, 72))
+	
+# Save file
+png(file.path(dir, "graphs", "map_europe.png"), width=600, height=700)
+p1
+dev.off()
+
+
+
+
+	
 
