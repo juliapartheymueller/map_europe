@@ -1,9 +1,8 @@
-Map Data/Statistics for European Countries
-==========================================
+# Map Data/Statistics for European Countries
 
-# Description
+## Description
 The script provides the basic setup to create a map visualizing summary statistics for European countries. The script allows to adjust the colour scheme, the number of intervals, and the mehtod used to calculate the breaks.
 
-# Source of shapefiles
+## Source of shapefiles
 The shape files have been retrieved from Eurostat:
 http://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts
