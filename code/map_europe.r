@@ -1,6 +1,8 @@
 ###############################################################################################################
-# Mapping data: European countries
+# Map Data for European Countries
 ###############################################################################################################
+
+# Load required packages
 library("maptools")
 library("RColorBrewer")
 library("sp")
