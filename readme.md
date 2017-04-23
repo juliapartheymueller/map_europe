@@ -1,4 +1,4 @@
-# Map Data for European Countries
+# Create Map of Data for European Countries
 
 ## Description
 The R script provides the basic setup to create a map visualizing summary statistics for European countries. The script allows to adjust the colour scheme, the number of intervals, and the mehtod used to calculate the breaks.
