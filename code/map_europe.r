@@ -54,7 +54,7 @@ p1 <- spplot(europe.map2, c("some_data"), names.attr =c("Some data"),
 	xlim = c(-13, 35), ylim = c(33, 72))
 	
 # Save file
-png(file.path(dir, "graphs", "map_europe.png"), width=600, height=700)
+png(file.path(dir, "graphs", "map_europe.png"), width=500, height=400)
 p1
 dev.off()
 
