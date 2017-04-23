@@ -5,5 +5,5 @@ The R script provides the basic setup to create a map visualizing summary statis
 
 ## Source of Shape Files
 The shape files have been retrieved from Eurostat and Natural Earth:
-http://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts
-http://www.naturalearthdata.com/downloads/10m-cultural-vectors/
+- http://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts
+- http://www.naturalearthdata.com/downloads/10m-cultural-vectors/
