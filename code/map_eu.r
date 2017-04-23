@@ -43,7 +43,7 @@ agg.some_data <- aggregate(europe.map2$some_data, by=list(europe.map2$NUTS_ID), 
 summary(agg.some_data$x)
 brks.qt = classIntervals(agg.some_data$x, n = num.int, style = "quantile")
 brks.jk = classIntervals(agg.some_data$x, n = num.int, style = "jenks")
-brks.eq = classIntervals(agg.some_data$x, n = num.int7, style = "equal")
+brks.eq = classIntervals(agg.some_data$x, n = num.int, style = "equal")
 brks.pr = classIntervals(agg.some_data$x, n = num.int, style = "pretty")
 
 # Plot
