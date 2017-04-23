@@ -70,7 +70,8 @@ p2 <- spplot(europe.map2, c("some_data"), names.attr =c("Some data"),
 	at= brks.pr$brks,
 	col=grey(.9), col.regions=pal,
 	main="ADD TITLE",
-	xlim = c(-12, 42), ylim = c(33, 72))
+	xlim = c(-12, 42), ylim = c(33, 72),
+	par.settings = list(axis.line = list(col =  'transparent')))
 p2
 	
 # Save file
